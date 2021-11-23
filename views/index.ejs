@@ -17,55 +17,65 @@
 	</head>
 	<body>
 		<main class="main">
-			<div class="intro-content mt-5">
+			<div class="container">
+				<div class="row">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<a class="navbar-brand" href="/">Vi_Nails</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						  <span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+						  <ul class="navbar-nav">
+							<li class="nav-item active">
+							  <a class="nav-link" href="/">Inicio</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" href="/book">Agenda</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" href="/jobs">Trabalhos</a>
+							</li>
+						  </ul>
+						</div>
+					  </nav>
+				</div>
+			</div>
+			<div class="intro-content mt-4">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 align-self-center d-flex">
 							<div class="p-1">
-							<img src="/assets/profile.jpeg" class="img-thumbnail rounded-circle"/>
+								<img src="/assets/profile.jpeg" class="img-thumbnail rounded-circle"/>
 							</div>
 							<div class="p-1">
-							<h1 class="display-4 mb-3">Vitoria Fernandes</h1>
-							<p class="lead mb-4">
-								Designer<br />
-								Pɑdrα̃o de ɑltɑ nɑturɑlidɑde<br />
-								<a href="https://goo.gl/maps/qgFAtdnthyFZisi4A" target="_blank">Natal-RN, R. Pres. Mascarenhas, 292a</a><br />
-							</p>
-						</div>
-						</div>
-						<div class="col-md-5 ml-auto">
-							<div class="card">
-							  <div class="card-body text-dark">
-								<form method="post">
-								  <div class="form-group p-1">
-									<label for="name">Nome Completo</label>
-									<input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome" required>
-								  </div>
-								  <div class="form-group p-1">
-									<label for="date">Data</label>
-									<input type="date" min="2021-11-19" class="form-control" name="date" id="date" required>
-								  </div><div class="form-group p-1">
-									<label for="hour">Hora</label>
-									<input type="time" class="form-control" name="hour" id="hour" min="08:00" max="17:00" required>
-									<small>Horario de funcionamento e de: 08:00 as 17:00</small>
-								  </div>
-								  <div class="form-group p-1">
-									<label for="phone">Telefone p/ contato</label>
-									<input type="tel" class="form-control" id="phone" name="phone" maxlength="11" required>
-								  </div>
-								  <div class="d-grid gap-2 mt-1">
-									<button class="btn btn-success" type="submit">Agendar</button>
-								  </div>
-								</form>
-							  </div>
+								<h1 class="display-4 mb-3">Vitoria Fernandes</h1>
+								<p class="lead mb-4">
+									Designer<br />
+									Pɑdrα̃o de ɑltɑ nɑturɑlidɑde<br />
+									<a href="https://goo.gl/maps/qgFAtdnthyFZisi4A" target="_blank">Natal-RN, R. Pres. Mascarenhas, 292a</a><br />
+								</p>
 							</div>
-						  </div>
+						</div>
+						<%- include(page) -%>
 					</div>
 				</div>
 			</div>
 		</main>
+		<br />
 	</body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script
+	src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"
+></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"
+></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	crossorigin="anonymous"
+></script>
 </html>
